@@ -77,7 +77,6 @@ b {
     width: 100%;
     height: 52px;
     transform: scale(1.2);
-    
 }
 
 .search-bar {
@@ -138,6 +137,7 @@ input:focus {
     display: flex;
     align-items: center;
     justify-content: center;
+    list-style: none;
 }
 
 .tag {
@@ -217,7 +217,6 @@ input:focus {
     background: transparent;
     border: none;
     padding: 5px;
-    /* font-family: 'Ubuntu', sans-serif; */
 }
 .add-wishlist-btn:hover {
     transition: 0.1s;
@@ -307,11 +306,6 @@ input:focus {
     background: #e60012;
 }
 
-.cover1 {
-    display: flex;
-    justify-content: center;
-    border: cyan 2px solid;
-}
 .grid {
     border: blue solid 2px;
     width: 90%;
@@ -325,14 +319,11 @@ input:focus {
     padding: 10px;
     cursor: grab;
 }
-.hero-gallery {
-    width: 100%;
-    grid-area: main;
-    border: black 1px solid;
-}
-.gallery-pic {
-    width: 100%;
-    border: black 1px solid;
+
+.cover1 {
+    display: flex;
+    justify-content: center;
+    border: cyan 2px solid;
 }
 
 .cover2 {
@@ -343,10 +334,21 @@ input:focus {
     display: none;
 }
 
+.gallery-main {
+    width: 100%;
+    grid-area: main;
+    border: black 1px solid;
+}
+.gallery-pic {
+    width: 100%;
+    border: black 1px solid;
+}
+
 .slider-btns {
-    width: 30%;
+    width: 25%;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     padding: 10px;
     margin: 12px 0;
 }
@@ -361,6 +363,31 @@ input:focus {
     transition: 0.2s;
     color: rgb(0, 104, 223);
     transform: scale(1.2);
+}
+.slider-dot {
+    height: 0.7rem;
+    width: 0.7rem;
+    border-radius: 50%;
+    background: rgb(40, 45, 54);
+    transition: 0.2s ease;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slider-dot:hover {
+    background: rgb(0, 104, 223);
+}
+.dot-active {
+    background: rgb(40, 45, 54);
+    transform: scale(1.6);
+}
+.dot-active::before {
+    content: "";
+    height: 0.35rem;
+    width: 0.35rem;
+    border-radius: 50%;
+    border: #e60012 solid 1.4px;
 }
 
 /* ######## GAME INFO ####### */
