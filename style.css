@@ -3,24 +3,33 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
-h2 {
+body {
+    background: rgb(85, 85, 85);
+}
+
+/* ########################## */
+h1 {
+    font-size: 28px;
+}
+h1, h4 {
     color: #434242;
-    font-size: 27px;
 }
 
 p {
-    color: #555555;
+    color: #4b4b4b;
+    font-weight: 300;
+    line-height: 1.4;
 }
 
 i {
     margin: 0 3px;
 }
 
-body {
-    background: rgb(85, 85, 85);
+b {
+    font-weight: 500;
 }
 
 /* #####COLOURS##### */
@@ -30,7 +39,6 @@ body {
 .ntd-grey {
     color: #434242;
 }
-/* ################## */
 
 /* ######## NAV START ###########  */
 .nav-container {
@@ -326,6 +334,7 @@ input:focus {
     display: flex;
     justify-content: space-around;
     padding: 10px;
+    margin-bottom: 12px;
 }
 .slider {
     border: none;
@@ -337,7 +346,41 @@ input:focus {
 .slider:hover {
     transition: 0.2s;
     color: rgb(0, 104, 223);
-    
     transform: scale(1.2);
 }
 
+/* ######## GAME INFO ####### */
+.game-info {
+    background: #fff;
+    border: fuchsia 2px dotted;
+    padding: 20px;
+}
+.game-info-text-box {
+    border: 2px cyan solid;
+    margin: 30px 20px;
+    padding: 3px;
+}
+.game-info-text-box ul {
+    margin-left: 20px;
+}
+
+.explore-btn {
+    font-size: 20px;
+    background: #e60012;
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    padding: 16px;
+    margin: 20px 0;
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.explore-btn:hover {
+    transition: 0.2s;
+    background: #a5000e;
+    transform: scale(1.02);
+}
+ 
