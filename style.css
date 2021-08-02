@@ -290,9 +290,54 @@ input:focus {
     border-bottom: 2px solid #a5000e;
 }
 
-/* ####### CAROUSEL ######## */
-.carousel {
+/* ####### Gallery ######## */
+.gallery {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: black 3px solid;
     background: #e60012;
-    min-height: 450px;
+    position: relative;
+}
+.gallery-pics {
+    width: 95%;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 50% 1fr 1fr;
+    grid-template-areas:
+        "main . ."
+        "main . .";
+    gap: 0.5em;
+    padding: 10px;
+    cursor: grab;
+}
+.hero-gallery {
+    width: 100%;
+    grid-area: main;
+    border: black 1px solid;
+}
+.gallery-pic {
+    width: 100%;
+    border: black 1px solid;
+}
+
+.slider-btns {
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+.slider {
+    border: none;
+    background: transparent;
+    font-size: 50px;
+    color: rgb(40, 45, 54);
+    cursor: pointer;
+}
+.slider:hover {
+    transition: 0.2s;
+    color: rgb(0, 104, 223);
+    
+    transform: scale(1.2);
 }
 
