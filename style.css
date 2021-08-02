@@ -32,6 +32,10 @@ b {
     font-weight: 500;
 }
 
+.text-link {
+    color: #e60012;
+}
+
 .mini {
     font-size: 12px;
 }
@@ -510,10 +514,6 @@ input:focus {
     text-align: center;
 }
 
-.support-link {
-    color: #e60012;
-}
-
 .esrb-rating {
     border: green 2px solid;
     padding: 10px 50px;
@@ -537,5 +537,11 @@ input:focus {
 .esrb-details {
     font-size: 15px;
     border: yellow 2px solid;
+}
+
+/* #############CONDITIONS ############# */
+.conditions {
+    background: #fff;
+    padding: 40px;
 }
  
