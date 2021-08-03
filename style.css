@@ -19,9 +19,8 @@ h1, h4 {
 }
 
 p {
-    color: #4b4b4b;
     font-weight: 300;
-    line-height: 1.4;
+    line-height: 1.5;
 }
 
 i {
@@ -414,6 +413,7 @@ input:focus {
 }
 .game-info-text-box {
     border: 2px cyan solid;
+    color: #434242;
     margin: 30px 20px;
     padding: 3px;
 }
@@ -610,5 +610,104 @@ input:focus {
 .conditions {
     background: #fff;
     padding: 40px;
+}
+
+/* ######## FOOTER ############# */
+.footer-whole {
+    border: red 2px solid;
+    background: #fff;
+}
+
+.footer-upper {
+    border: orange 2px solid;
+    /* display: flex;
+    flex-direction: column; */
+    padding: 10px 40px;
+    margin: 20px 40px;
+}
+
+.footer-upper-inner {
+    border: 2px solid yellow;
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.list {
+    border: rgb(34, 255, 34) 2px solid;
+    margin: 0 18px;
+    /* display: flex; */
+    
+}
+.list ul, .list li a, .region-selector a {
+    text-decoration: none;
+    list-style: none;
+    text-decoration-color: #434242;
+    color: #434242;
+}
+.list li {
+    margin: 0 0 7px 0;
+    font-size: 13px;
+}
+.list li:hover, .region-selector a:hover {
+    text-decoration: underline;
+}
+
+/* ######lower footer########### */
+.footer-lower {
+    border: blue 2px solid;
+    background: linear-gradient(#434242, #5c5c5c);
+    background: grey;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-lower-icons {
+    border: 2px cyan solid;
+    display: flex;
+    justify-content: center;
+    /* width: 390px; */
+    padding: 25px 5px 10px 5px;
+}
+
+.contact-links a {
+    text-decoration: none;
+    color: #fff;
+    margin: 2px 5px;
+}
+.contact-links a:hover {
+    text-decoration: underline;
+    text-decoration-color: #fff;
+}
+
+.socials-container {
+    border: rebeccapurple 2px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 10px;
+}
+
+.social-icons {
+    border: purple 2px solid;
+    display: flex;
+}
+.social-icons img {
+    width: 50px;
+    margin: 0 7px;
+    border-radius: 5px;
+}
+
+.esrb-cert img {
+    width: 60px;
+}
+
+.copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 7px 7px 20px 7px;
+    color: #fff;
+    font-size: 12px;
 }
  
