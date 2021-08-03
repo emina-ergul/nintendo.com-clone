@@ -48,7 +48,7 @@ b {
     color: #434242;
 }
 .gr {
-    background: rgb(221, 221, 221);
+    background: rgb(231, 231, 231);
 }
 
 /* ######## NAV START ###########  */
@@ -485,9 +485,11 @@ input:focus {
     grid-area: lang;
 }
 
+/* ################### MODES ############## */
 .game-modes {
     border: red 2px solid;
     width: 94%;
+    margin: 10px 0;
     color: #434242;
     display: grid;
     grid-template-columns: 50fr 50fr;
@@ -537,6 +539,71 @@ input:focus {
 .esrb-details {
     font-size: 15px;
     border: yellow 2px solid;
+}
+
+/* ################ ONLINE SUPPORT############ */
+.game-support {
+    border: fuchsia 2px solid;
+    color: #434242;
+    width: 94%;
+    margin: 10px 0 40px 0;
+    padding: 18px;
+    display: grid;
+    grid-template-columns: auto 30% 40% auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "logo desc learnmore learnmore"
+        "label buttons buttons buttons";
+        grid-gap: 2rem;
+}
+
+.online-logo {
+    grid-area: logo;
+}
+.online-desc {
+    grid-area: desc;
+}
+
+.learn-more {
+    border: blue 2px solid;
+    grid-area: learnmore;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    height: 40px;
+    color: #434242;
+    font-size: 21px;
+}
+.learn-more-link {
+    text-decoration: none;
+    cursor: pointer;
+}
+.learn-more-link:hover {
+    transition: 0.1s;
+    border-bottom:grey 2px solid;
+}
+
+.label {
+    grid-area: label;
+}
+
+.online-btns {
+    grid-area: buttons;
+}
+.online-play-btn {
+    background: #e60012;
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    padding: 7px 12px;
+    margin: 0 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.online-play-btn:hover {
+    transition: 0.3s;
+    background: #a5000e;
+    transform: scale(1.05)
 }
 
 /* #############CONDITIONS ############# */
