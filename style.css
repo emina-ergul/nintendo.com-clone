@@ -228,6 +228,11 @@ input:focus {
     margin-top: 95px;
 }
 
+.hero-mobile img {
+    width: 100%;
+    display: none;
+}
+
 .hero-back {
     border: 3px solid black;
     background: #e60012;
@@ -261,7 +266,6 @@ input:focus {
     background: rgb(248, 248, 248);
     display: flex;
     justify-content: space-between;
-    max-height: 400px;
 }
 
 .price-info-left {
@@ -302,12 +306,13 @@ input:focus {
 
 .price {
     border: 2px blue solid;
+    padding: 10px;
 }
 
 .buy-container {
     border: black 1px solid;
-    margin-left: 16px;
-    padding: 5px;
+    /* margin-left: 16px; */
+    padding: 10px;
 }
 
 .buy-digital-btn {
@@ -318,7 +323,7 @@ input:focus {
     border-radius: 7px;
     padding: 16px;
     margin-bottom: 16px;
-    width: 240px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     cursor: pointer;
@@ -367,6 +372,18 @@ input:focus {
     transition: 0.1s ease;
     color: #a5000e;
     border-bottom: 2px solid #a5000e;
+}
+
+/* #######REVIEWS#############  */
+.reviews {
+    background: rgb(248, 248, 248);
+    padding: 10px;
+    display: none;
+}
+.reviews-container {
+    padding: 10px;
+    margin: 10px;
+    color: #434242;
 }
 
 /* ####### Gallery ##################### */
@@ -473,9 +490,38 @@ input:focus {
     color: #434242;
     margin: 30px 20px;
     padding: 3px;
+    position: relative;
 }
 .game-info-text-box ul {
     margin-left: 20px;
+}
+
+.text-fade {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border: orange 2px solid;
+    background: linear-gradient(transparent 20%, rgb(248, 248, 248)80%);
+    display: none;
+}
+/* .game-info-text-box::before {
+    display: none;
+    content: "";
+    position: absolute;
+    border: orange solid 3px;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(transparent 50%, rgb(248, 248, 248)90%);
+} */
+
+.read-more-btn {
+    display: none;
+    padding: 7px;
+    font-size: 18px;
+    color: #e60012;
+    background: transparent;
+    border: none;
+    cursor: pointer;
 }
 
 .explore-btn {
@@ -789,16 +835,39 @@ input:focus {
         display: none;
     }
     .content-container {
-        margin-top: 30px;
+        margin-top: 50px;
     }
-    .hero-back {
-        background: rgb(248, 248, 248);
-    }
-    #hero {
-        width: 100%;
-    }
-    .esrb {
+    .hero-container {
         display: none;
+    }
+    .hero-mobile img {
+        display: inline;
+    }
+
+    .price-info {
+        flex-direction: column;
+    }
+    .price-info-left, .price-info-right {
+        margin:20px;
+        padding: 10px;
+    }
+    .price-info-right {
+        flex-direction: column;
+    }
+
+    .reviews {
+        display: block;
+    }
+
+    .more {
+        display: none;
+    }
+    .text-fade {
+        display: inline
+    }
+
+    .read-more-btn {
+        display: inline;
     }
     
     

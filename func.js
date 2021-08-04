@@ -65,3 +65,16 @@ if(window.innerWidth <= 640) {
   console.log("gg")
   loginBox.innerHTML = '<a href=""><i class="fas fa-user"></i> Login</a>'
 }
+
+// read more game info 
+const btnReadMore = document.querySelector(".read-more-btn")
+const moreText = document.getElementsByClassName("more")
+const fade = document.querySelector(".text-fade")
+
+btnReadMore.addEventListener("click", () => {
+  fade.style.display = "none"
+  for(var t = 0; t < moreText.length; t++) {
+    moreText[t].style.display = "inline"
+  }
+  btnReadMore.style.display = "none"
+})
