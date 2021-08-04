@@ -43,3 +43,17 @@ btnLeft.addEventListener("click", changeSlide)
 for(var i = 0; i < dots.length; i++) {
   dots[i].addEventListener("click", changeSlide)
 }
+
+// burger menu
+const btnMenu = document.querySelector(".menu-btn")
+let menuOpen = false
+
+btnMenu.addEventListener("click", () => {
+  if(!menuOpen) {
+    menuOpen = true
+    btnMenu.classList.add("open")
+  } else {
+    menuOpen = false
+    btnMenu.classList.remove("open")
+  }
+})
