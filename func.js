@@ -57,3 +57,11 @@ btnMenu.addEventListener("click", () => {
     btnMenu.classList.remove("open")
   }
 })
+
+// responsive elements 
+const loginBox = document.querySelector(".nav-upper-login")
+
+if(window.innerWidth <= 640) {
+  console.log("gg")
+  loginBox.innerHTML = '<a href=""><i class="fas fa-user"></i> Login</a>'
+}

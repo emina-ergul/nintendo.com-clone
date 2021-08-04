@@ -55,7 +55,7 @@ b {
     position: fixed;
     top: 0;
     border: red solid 1px;
-    height: 95px;
+    /* height: 95px; */
     width: 100%;
     transition: 0.7s ease-out;
     z-index: 3;
@@ -144,7 +144,7 @@ input:focus {
 
 .tags-container {
     border: fuchsia 2px solid;
-    height: 100%;
+    /* height: 100%; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -224,7 +224,7 @@ input:focus {
     border: yellow 2px solid;
     position: relative;
     background: rgb(102, 102, 102);
-    height: 100%;
+    /* height: 100%; */
     margin-top: 95px;
 }
 
@@ -248,7 +248,7 @@ input:focus {
     z-index: 2
 }
 
-.hero-front img{
+#hero{
     position: absolute;
     top: 22px;
     left: 50%;
@@ -782,4 +782,28 @@ input:focus {
     .nav-upper-links {
         display: none;
     }
+    .search-bar {
+        display: none;
+    }
+    .nav-lower {
+        display: none;
+    }
+    .content-container {
+        margin-top: 30px;
+    }
+    .hero-back {
+        background: rgb(248, 248, 248);
+    }
+    #hero {
+        width: 100%;
+    }
+    .esrb {
+        display: none;
+    }
+    
+    
 }
+
+/* @media screen and (max-width: 640px) {
+
+} */
