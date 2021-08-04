@@ -63,7 +63,7 @@ b {
 
 .whole-nav {
     height: 100%;
-    background: #fff;
+    background: rgb(248, 248, 248);
 }
 
 .nav-upper {
@@ -175,18 +175,32 @@ input:focus {
     margin-top: 95px;
 }
 
+.hero-container {
+    /* border: cyan 2px solid;
+    background: rgb(248, 248, 248); */
+    /* height: 600px; */
+     /* width: 100%; */
+    /* position: relative; */
+}
+
 .hero-back {
+    border: 3px solid black;
     background: #e60012;
-    height: 600px;
-    width: 100%;
+    /* height: 100%; */
     position: relative;
+}
+
+#false {
+    /* height: 50%; */
+    width: 76%;
+    visibility: hidden;
 }
 
 .esrb {
     position: absolute;
     height: 90px;
     right: 10px;
-    bottom: 16px;
+    bottom: 10px;
 }
 
 .hero-front img{
@@ -194,22 +208,20 @@ input:focus {
     top: 22px;
     left: 50%;
     transform: translateX(-50%);
-    width: 87%;
+    width: 86%;
 }
 
 .price-info {
     border: rgb(90, 255, 90) 2px solid;
-    background: #fff;
+    background: rgb(248, 248, 248);
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .price-info-left {
     border: 2px solid fuchsia;
-    width: 46%;
-    margin-top: 50px;
+    margin: 100px 16px 100px 30px;
     padding: 10px;
-    min-height: 330px;
 }
 
 .ntd-switch {
@@ -237,8 +249,7 @@ input:focus {
 
 .price-info-right {
     border: blue 2px solid;
-    width: 46%;
-    margin-top: 50px;
+    margin: 140px 30px 100px 0px;
     display: flex;
     justify-content: flex-end;
 }
@@ -407,7 +418,7 @@ input:focus {
 
 /* ######## GAME INFO ################ */
 .game-info {
-    background: #fff;
+    background: rgb(248, 248, 248);
     border: fuchsia 2px dotted;
     padding: 20px;
 }
@@ -444,7 +455,7 @@ input:focus {
 /* ##### GAME FEATURES ################### */
 .game-features {
     border: rgb(0, 0, 0) dotted 2px;
-    background: #fff;
+    background: rgb(248, 248, 248);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -608,14 +619,14 @@ input:focus {
 
 /* #############CONDITIONS ############# */
 .conditions {
-    background: #fff;
+    background: rgb(248, 248, 248);
     padding: 40px;
 }
 
 /* ######## FOOTER ############# */
 .footer-whole {
     border: red 2px solid;
-    background: #fff;
+    background: rgb(248, 248, 248);
 }
 
 .footer-upper {
@@ -656,8 +667,7 @@ input:focus {
 /* ######lower footer########### */
 .footer-lower {
     border: blue 2px solid;
-    background: linear-gradient(#434242, #5c5c5c);
-    background: grey;
+    background: linear-gradient(#363535, #525252);
     display: flex;
     flex-direction: column;
 }
@@ -666,14 +676,13 @@ input:focus {
     border: 2px cyan solid;
     display: flex;
     justify-content: center;
-    /* width: 390px; */
-    padding: 25px 5px 10px 5px;
+    padding: 30px 5px 10px 5px;
 }
 
 .contact-links a {
     text-decoration: none;
     color: #fff;
-    margin: 2px 5px;
+    margin: 0 5px;
 }
 .contact-links a:hover {
     text-decoration: underline;
@@ -691,6 +700,7 @@ input:focus {
 .social-icons {
     border: purple 2px solid;
     display: flex;
+    margin-top: 7px;
 }
 .social-icons img {
     width: 50px;
@@ -706,7 +716,7 @@ input:focus {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 7px 7px 20px 7px;
+    padding: 7px 7px 25px 7px;
     color: #fff;
     font-size: 12px;
 }
