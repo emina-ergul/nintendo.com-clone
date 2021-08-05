@@ -54,8 +54,6 @@ b {
 .nav-container {
     position: fixed;
     top: 0;
-    border: red solid 1px;
-    /* height: 95px; */
     width: 100%;
     transition: 0.7s ease-out;
     z-index: 3;
@@ -74,7 +72,6 @@ b {
 }
 
 .nav-upper-left {
-    border: yellow 2px solid;
     display: flex;
     width: 50%;
 }
@@ -92,7 +89,6 @@ b {
 }
 
 .search-bar {
-    border: cyan 2px solid;
     width: 100%;
     height: 75%;
     margin: 5px 0 0 16px;
@@ -111,7 +107,7 @@ input:focus {
 }
 
 .nav-upper-right {
-    border: green 2px solid;
+    
     display: flex;
     justify-content: flex-end;
 }
@@ -137,14 +133,11 @@ input:focus {
     align-items: center;
 }
 
-.nav-lower {
+/* .nav-lower {
     border: 1px blue solid;
-    /* height: 45%; */
-}
+} */
 
 .tags-container {
-    border: fuchsia 2px solid;
-    /* height: 100%; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -172,7 +165,6 @@ input:focus {
 }
 
 .menu-btn {
-    border: black dotted 2px;
     height: 100%;
     position: relative;
     display: flex;
@@ -218,14 +210,54 @@ input:focus {
     transform: rotate(-45deg);
 }
 
+/* ########## TOUCH NAV ######### */
+.touch-nav-container {
+    display: none;
+}
+.touch-nav {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background: rgb(248, 248, 248);
+    border-top: rgb(175, 175, 175) 1.5px solid;
+    z-index: 1;
+}
+
+.tnbtn {
+    background: transparent;
+    color: #434242;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 10px 10px;
+}
+
+.touch-search {
+    position: absolute;
+    left: 50%;
+    top: -10%;
+    background: #e60012;
+    color: #fff;
+    border: 1px rgb(192, 192, 192) solid;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 60px;
+}
+
 /* ############ NAV END ############## */
 
 .content-container {
-    border: yellow 2px solid;
     position: relative;
     background: rgb(102, 102, 102);
-    /* height: 100%; */
-    margin-top: 95px;
+    margin-top: 80px;
 }
 
 .hero-mobile img {
@@ -234,9 +266,7 @@ input:focus {
 }
 
 .hero-back {
-    border: 3px solid black;
     background: #e60012;
-    /* height: 100%; */
     position: relative;
 }
 
@@ -262,14 +292,12 @@ input:focus {
 }
 
 .price-info {
-    border: rgb(90, 255, 90) 2px solid;
     background: rgb(248, 248, 248);
     display: flex;
     justify-content: space-between;
 }
 
 .price-info-left {
-    border: 2px solid fuchsia;
     margin: 100px 16px 100px 30px;
     padding: 10px;
 }
@@ -298,20 +326,16 @@ input:focus {
 }
 
 .price-info-right {
-    border: blue 2px solid;
     margin: 140px 30px 100px 0px;
     display: flex;
     justify-content: flex-end;
 }
 
 .price {
-    border: 2px blue solid;
     padding: 10px;
 }
 
 .buy-container {
-    border: black 1px solid;
-    /* margin-left: 16px; */
     padding: 10px;
 }
 
@@ -391,12 +415,10 @@ input:focus {
     display: flex;
     align-items: center;
     flex-direction: column;
-    border: black 3px solid;
     background: #e60012;
 }
 
 .gal-grid {
-    border: blue solid 2px;
     width: 90%;
     margin-top: 10px;
     display: grid;
@@ -412,11 +434,9 @@ input:focus {
 .cover1 {
     display: flex;
     justify-content: center;
-    border: cyan 2px solid;
 }
 
 .cover2 {
-    border: rgb(168, 76, 255) 2px solid;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -482,11 +502,9 @@ input:focus {
 /* ######## GAME INFO ################ */
 .game-info {
     background: rgb(248, 248, 248);
-    border: fuchsia 2px dotted;
     padding: 20px;
 }
 .game-info-text-box {
-    border: 2px cyan solid;
     color: #434242;
     margin: 30px 20px;
     padding: 3px;
@@ -500,19 +518,9 @@ input:focus {
     position: absolute;
     height: 100%;
     width: 100%;
-    border: orange 2px solid;
     background: linear-gradient(transparent 20%, rgb(248, 248, 248)80%);
     display: none;
 }
-/* .game-info-text-box::before {
-    display: none;
-    content: "";
-    position: absolute;
-    border: orange solid 3px;
-    height: 100%;
-    width: 100%;
-    background: linear-gradient(transparent 50%, rgb(248, 248, 248)90%);
-} */
 
 .read-more-btn {
     display: none;
@@ -546,7 +554,6 @@ input:focus {
 
 /* ##### GAME FEATURES ################### */
 .game-features {
-    border: rgb(0, 0, 0) dotted 2px;
     background: rgb(248, 248, 248);
     display: flex;
     flex-direction: column;
@@ -554,7 +561,6 @@ input:focus {
 }
 
 .game-stats {
-    border: rgb(0, 255, 0) solid 2px;
     width: 94%;
     margin: 50px 0 10px 0;
     display: grid;
@@ -590,7 +596,6 @@ input:focus {
 
 /* ################### MODES ############## */
 .game-modes {
-    border: red 2px solid;
     width: 94%;
     margin: 10px 0;
     color: #434242;
@@ -604,7 +609,6 @@ input:focus {
 }
 
 .play-mode-icons {
-    border: cyan 2px solid;
     margin: 20px 0;
     display: flex;
     align-items: center;
@@ -620,15 +624,13 @@ input:focus {
 }
 
 .esrb-rating {
-    border: green 2px solid;
-    padding: 10px 50px;
+    padding: 10px 30px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
 .esrb-disp {
-    border: rebeccapurple 2px solid;
     margin: 30px 0 0 0;
     display: flex;
     align-items: center;
@@ -641,12 +643,10 @@ input:focus {
 
 .esrb-details {
     font-size: 15px;
-    border: yellow 2px solid;
 }
 
 /* ################ ONLINE SUPPORT############ */
 .game-support {
-    border: fuchsia 2px solid;
     color: #434242;
     width: 94%;
     margin: 10px 0 40px 0;
@@ -668,7 +668,6 @@ input:focus {
 }
 
 .learn-more {
-    border: blue 2px solid;
     grid-area: learnmore;
     display: flex;
     align-items: center;
@@ -717,30 +716,23 @@ input:focus {
 
 /* ######## FOOTER ############# */
 .footer-whole {
-    border: red 2px solid;
     background: rgb(248, 248, 248);
 }
 
 .footer-upper {
-    border: orange 2px solid;
-    /* display: flex;
-    flex-direction: column; */
     padding: 10px 40px;
-    margin: 20px 40px;
+    margin: 0 10px 10px 40px;
 }
 
 .footer-upper-inner {
-    border: 2px solid yellow;
     min-height: 200px;
     display: flex;
     justify-content: center;
 }
 
 .list {
-    border: rgb(34, 255, 34) 2px solid;
     margin: 0 18px;
     /* display: flex; */
-    
 }
 .list ul, .list li a, .region-selector a {
     text-decoration: none;
@@ -758,14 +750,12 @@ input:focus {
 
 /* ######lower footer########### */
 .footer-lower {
-    border: blue 2px solid;
     background: linear-gradient(#363535, #525252);
     display: flex;
     flex-direction: column;
 }
 
 .footer-lower-icons {
-    border: 2px cyan solid;
     display: flex;
     justify-content: center;
     padding: 30px 5px 10px 5px;
@@ -782,7 +772,6 @@ input:focus {
 }
 
 .socials-container {
-    border: rebeccapurple 2px solid;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -790,7 +779,6 @@ input:focus {
 }
 
 .social-icons {
-    border: purple 2px solid;
     display: flex;
     margin-top: 7px;
 }
@@ -822,6 +810,9 @@ input:focus {
 }
 
 @media screen and (max-width: 768px) {
+    .touch-nav-container {
+        display: inline;
+    }
     .menu-btn-container {
         display: inline;
     }
