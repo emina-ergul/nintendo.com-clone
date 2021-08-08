@@ -377,26 +377,28 @@ input:focus {
     background: transparent;
     border: none;
     padding: 5px;
+    position: relative;
     cursor: pointer;
 }
-.add-wishlist-btn:hover {
-    transition: 0.1s;
-    color: #a5000e;
-    border-bottom: #a5000e 2px solid;
+.add-wishlist-btn:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    right: 0;
+    top: 30px;
+    background: transparent;
+    transition: .3s ease;
+    -webkit-transition: .3s ease;
+}
+.add-wishlist-btn:hover:after {
+    background: #a5000e;
 }
 
 .price-info-right {
     margin: 140px 30px 100px 0px;
     display: flex;
     justify-content: flex-end;
-}
-
-.price {
-    padding: 10px;
-}
-
-.buy-container {
-    padding: 10px;
 }
 
 .buy-digital-btn {
@@ -406,7 +408,7 @@ input:focus {
     border: none;
     border-radius: 7px;
     padding: 16px;
-    margin-bottom: 16px;
+    margin: 16px 0;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -415,7 +417,11 @@ input:focus {
 .buy-digital-btn:hover {
     transition: 0.2s;
     background: #a5000e;
-    transform: scale(1.02);
+    transform: scale(1.03);
+}
+
+.price {
+    padding: 10px;
 }
 
 .points-container {
@@ -426,13 +432,25 @@ input:focus {
     cursor: pointer;
 }
 .points-link {
-    color: #555555;
+    color: #636363;
     text-decoration: none;
+    position: relative;
 }
-.points-link:hover {
-    transition: 0.1s;
-    border-bottom: #434242 2px solid;
+.points-link:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    right: 0;
+    top: 22px;
+    background: transparent;
+    transition: .3s ease;
+    -webkit-transition: .3s ease;
 }
+.points-link:hover:after {
+    background: #636363;
+}
+
 #coin {
     width: 27px;
     margin-right: 7px;
@@ -451,11 +469,21 @@ input:focus {
     padding: 7px;
     text-decoration: none;
     color: #e60012;
+    position: relative;
 }
-.buy-physical-container a:hover {
-    transition: 0.1s ease;
-    color: #a5000e;
-    border-bottom: 2px solid #a5000e;
+.buy-physical-container a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    right: 0;
+    top: 30px;
+    background: rgba(255, 242, 242, 0);
+    transition: .3s ease;
+    -webkit-transition: .3s ease;
+}
+.buy-physical-container a:hover:after {
+    background: #a5000e;
 }
 
 /* #######REVIEWS#############  */
@@ -736,19 +764,27 @@ input:focus {
     grid-area: learnmore;
     display: flex;
     align-items: center;
-    /* padding-left: 20px; */
-    /* height: 40px; */
     color: #434242;
     font-size: 21px;
-    /* overflow-y: hidden; */
 }
 .learn-more-link {
     text-decoration: none;
     cursor: pointer;
+    position: relative;
 }
-.learn-more-link:hover {
-    transition: 0.1s;
-    border-bottom:grey 2px solid;
+.learn-more-link:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    right: 0;
+    top: 30px;
+    background: transparent;
+    transition: .3s ease;
+    -webkit-transition: .3s ease;
+}
+.learn-more-link:hover:after {
+    background: #636363;
 }
 
 .label {
