@@ -44,27 +44,31 @@ for(var i = 0; i < dots.length; i++) {
   dots[i].addEventListener("click", changeSlide)
 }
 
-// burger menu
+// navs and menu
 const btnMenu = document.querySelector(".menu-btn")
+const sideNav = document.querySelector(".side-nav")
+const touchNav = document.querySelector(".touch-nav")
 let menuOpen = false
 
 btnMenu.addEventListener("click", () => {
   if(!menuOpen) {
-    menuOpen = true
+    console.log("open")
     btnMenu.classList.add("open")
+    sideNav.style.transform = "translateX(-300px)"
+    touchNav.style.transform = "translateY(70px)"
+    menuOpen = true
   } else {
-    menuOpen = false
     btnMenu.classList.remove("open")
+    sideNav.style.transform = "translateX(300px)"
+    touchNav.style.transform = "translateY(0px)"
+    menuOpen = false
   }
 })
 
 // responsive elements 
-const loginBox = document.querySelector(".nav-upper-login")
-
-if(window.innerWidth <= 640) {
-  console.log("gg")
-  loginBox.innerHTML = '<a href=""><i class="fas fa-user"></i> Login</a>'
-}
+if(window.innerWidth < 640) {
+  document.querySelector(".nav-upper-login").innerHTML = '<a href=""><i class="fas fa-user"></i> Login</a>'
+} 
 
 // read more game info 
 const btnReadMore = document.querySelector(".read-more-btn")
