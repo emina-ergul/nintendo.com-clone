@@ -211,9 +211,10 @@ input:focus {
     background: rgb(243, 237, 237);
     position: fixed;
     right: -300px;
-    top: 50px;
+    top: 53px;
     height: 100%;
     width: 300px;
+    border-left: #d6d6d6 1.3px solid;
     z-index: 3;
     overflow-y: scroll;
     transition: 0.4s ease-in-out;
@@ -260,6 +261,85 @@ input:focus {
     height: 1px;
     border: none;
     background: #b8b8b8;
+}
+
+.expandable-g-container {
+    display: none;
+}
+
+.expandable-g {
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    width: 100%;
+    transition: .3s ease;
+}
+
+.sn-exp-a-cont a {
+    color: #434242;
+    text-decoration: none;
+    margin: 0 0 2px 20px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sn-exp-a-cont a:hover {
+    transition: .2s ease;
+    color: #e60012;
+}
+
+.sn-exp-a-cont button {
+    cursor: pointer;
+    border: 1px #8a8a8a solid;
+    padding: 20px;
+    width: 100px;
+    font-size: 20px;
+    background-color: rgb(255, 255, 255);
+    color: #434242;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+    border-radius: 7px
+}
+
+.expandable-h {
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.expandable-h a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+    text-decoration: none;
+    color: #434242;
+}
+.expandable-h a:hover {
+    transition: .2s;
+    color: #e60012;
+}
+
+#consoles {
+    width: 80%;
+    border: 1px solid #aaaaaa;
+    border-radius: 5px;
+    padding: 7px 16px;
+    margin: 5px 10px;
+    background-color: #fff;
+}
+
+.acc {
+    height: 70px;
+    /* width: 100px; */
+    border: 1px solid #aaaaaa;
+    border-radius: 5px;
+    padding: 7px 16px;
+    margin: 0 20px;
+    background-color: #fff;
 }
 
 /* ########## TOUCH NAV ######### */
@@ -568,6 +648,7 @@ input:focus {
     border-radius: 50%;
     background: rgb(40, 45, 54);
     transition: 0.2s ease;
+    -webkit-transition: 0.2s ease;
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -915,40 +996,24 @@ input:focus {
     .content-container {
         padding-bottom: 90px;
     }
-    .touch-nav-container {
+    .touch-nav-container, .menu-btn-container, .hero-mobile img, .text-fade, .read-more-btn, .game-stats {
         display: inline;
     }
-    .menu-btn-container {
-        display: inline;
-    }
-    .nav-upper-links {
+    
+    .nav-upper-links, .search-bar, .nav-lower, .hero-container, .more {
         display: none;
     }
-    .search-bar {
-        display: none;
-    }
-    .nav-lower {
-        display: none;
-    }
+    
     .content-container {
         margin-top: 50px;
     }
-    .hero-container {
-        display: none;
-    }
-    .hero-mobile img {
-        display: inline;
-    }
 
-    .price-info {
+    .price-info, .price-info-right, .game-modes {
         flex-direction: column;
     }
     .price-info-left, .price-info-right {
         margin:20px;
         padding: 10px;
-    }
-    .price-info-right {
-        flex-direction: column;
     }
 
     .reviews {
@@ -956,33 +1021,15 @@ input:focus {
     }
 
     .gal-grid {
+        grid-template-columns: 1fr 1fr;
         grid-template-areas:
         "main main"
         ". ."
         ". .";
-    grid-template-columns: 1fr 1fr;;
     }
 
     .slider-btns {
         width: 90%;
-    }
-
-    .more {
-        display: none;
-    }
-    .text-fade {
-        display: inline
-    }
-
-    .read-more-btn {
-        display: inline;
-    }
-
-    .game-stats {
-        display: inline;
-    }
-    .game-modes {
-        flex-direction: column;
     }
     .play-modes, .esrb-rating {
         width: 100%;
@@ -992,7 +1039,6 @@ input:focus {
         display: flex;
         flex-direction: column;
     }
-    
     .copyright {
         text-align: center;
     }
